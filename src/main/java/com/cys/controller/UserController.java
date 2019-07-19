@@ -1,14 +1,10 @@
 package com.cys.controller;
 
-import com.cys.annotation.RequireLogin;
 import com.cys.pojo.User;
 import com.cys.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -34,9 +30,8 @@ public class UserController {
         return ResponseEntity.ok(true);
     }
 
-    @PostMapping("test1")
-    public ResponseEntity<String> test1(User user){
-        String userName = user.getUserName();
-        return ResponseEntity.ok(userName);
+    @GetMapping("test1")
+    public ResponseEntity<String> test1(){
+        return ResponseEntity.ok("hello,jenkins");
     }
 }
