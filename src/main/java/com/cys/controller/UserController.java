@@ -32,6 +32,6 @@ public class UserController {
 
     @GetMapping("test1")
     public ResponseEntity<String> test1(){
-        return ResponseEntity.ok("hello,jenkins---cys---");
+        return ResponseEntity.ok("hello,jenkins---haha---");
     }
 }
