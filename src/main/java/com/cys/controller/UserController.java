@@ -36,7 +36,7 @@ public class UserController {
 
     @GetMapping("test1")
     public ResponseEntity<String> test1(){
-        return ResponseEntity.ok("hello,jenkins---oooooooooooooo---");
+        return ResponseEntity.ok("hello,jenkins---jenkins实现自动化部署---");
     }
 
     public static void main(String[] args) {
